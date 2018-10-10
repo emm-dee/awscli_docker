@@ -1,5 +1,6 @@
 # AWS CLI Docker Image
 Will run "aws" commands, based on python3 runtime inside alpine linux (bash shell installed if needed)
+Basically, it prevents you from having to run 
 
 
 ### Requirements:
@@ -9,6 +10,7 @@ Will run "aws" commands, based on python3 runtime inside alpine linux (bash shel
 ### Example Run (after building):
 The env vars (secret key, etc) must be configured here. Example has the image built as "built_image_name":
 
+Example here shows providing the environment vars at runtime, adjust accordingly!!
 ```
 docker run \
 -e AWS_SECRET_ACCESS_KEY='xyz123' \
